@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ejercicio 3 Javascript</title>
+      <link rel="stylesheet" href="./styles.css" />
+   </head>
+
+   <body style="margin-left: 32%; background-color: rgb(190, 193, 193); ">
+      <div>
+         <div style="width: 580px; margin-top: 50px;">
+            <h2 style="display: flex; justify-content: center; color: rgb(167, 5, 108);">Calculadora moderna</h2>
+            <div id="screen" class="screen"
+               style="display: flex; flex-direction: row; background-color: whitesmoke; height: 48px; width: 97%; box-shadow: inset 3px 3px 6px 1px black; border-radius: 5%; display: flex; justify-content: end; align-items: center; padding-right: 15px;font-size: large;">
+            </div>
+            <div class="calculator">
+               <button onclick="handleTecla(`(`)" type="button" id="op-par" class="button aritm">(</button>
+               <button onclick="handleTecla(`)`)" type="button" id="cl-par" class="button aritm">)</button>
+               <button onclick="handleTeclAritmetica(`%`)" type="button" id="resto" class="button aritm">%</button>
+               <button onclick="handleLimpieza()" type="button" id="limpieza" class="button AC">AC</button>
+               <button onclick="handleTecla(`7`)" type="button" id="7" class="button">7</button>
+               <button onclick="handleTecla(`8`)" type="button" id="8" class="button">8</button>
+               <button onclick="handleTecla(`9`)" type="button" id="9" class="button">9</button>
+               <button onclick="handleTeclAritmetica(`/`)" type="button" id="division" class="button aritm">/</button>
+               <button onclick="handleTecla(`4`)" type="button" id="4" class="button">4</button>
+               <button onclick="handleTecla(`5`)" type="button" id="5" class="button">5</button>
+               <button onclick="handleTecla(`6`)" type="button" id="6" class="button">6</button>
+               <button onclick="handleTeclAritmetica(`x`)" type="button" id="multiplicacion"
+                  class="button aritm">x</button>
+               <button onclick="handleTecla(`1`)" type="button" id="1" class="button">1</button>
+               <button onclick="handleTecla(`2`)" type="button" id="2" class="button">2</button>
+               <button onclick="handleTecla(`3`)" type="button" id="3" class="button">3</button>
+               <button onclick="handleTeclAritmetica(`-`)" type="button" id="resta" class="button aritm">-</button>
+               <button onclick="handleTecla(`0`)" type="button" id="0" class="button">0</button>
+               <button onclick="handleTecla(`.`)" type="button" id="punto" class="button">.</button>
+               <button onclick="calculation()" type="button" id="igual" class=" button igual">=</button>
+               <button onclick="handleTeclAritmetica(`+`)" type="button" id="suma" class="button aritm">+</button>
+            </div>
+         </div>
+
+      </div>
+      <div class="calculator-container" style="width: 580px; margin-top: 85px">
+         <h2 style="display: flex; justify-content: center; color: rgb(167, 5, 108); padding-top: 20px;">Diseño Estilo
+            Piano</h2>
+         <div style="margin-top: 300px; width: 580px; margin-top: 100px;">
+            <div id="screen2" class="screen"
+               style="display: flex; flex-direction: row; background-color: whitesmoke; height: 48px; width: 97%; box-shadow: inset 3px 3px 6px 1px black; border-radius: 5%; display: flex; justify-content: end; align-items: center; padding-right: 15px;font-size: large;">
+            </div>
+            <div>
+               <button onclick="handleLimpieza2()" type="button" id="limpieza2" class="button AC">AC</button>
+               <button onclick="handleTecl2Aritmetica(`+`)" type="button" id="suma2" class="button aritm">+</button>
+               <button onclick="handleTecl2Aritmetica(`-`)" type="button" id="resta2" class="button aritm">-</button>
+               <button onclick="handleTecl2Aritmetica(`x`)" type="button" id="multiplicacion2"
+                  class="button aritm">x</button>
+               <button onclick="handleTecl2Aritmetica(`/`)" type="button" id="division2" class="button aritm">/</button>
+               <button onclick="handleTecl2Aritmetica(`%`)" type="button" id="resto2" class="button aritm">%</button>
+               <button onclick="handleTecla2(`(`)" type="button" id="op-par2" class="button aritm">(</button>
+               <button onclick="handleTecla2(`)`)" type="button" id="cl-par2" class="button aritm">)</button>
+               <button onclick="handleTecla2(`1`)" type="button" id="1-2" class="button">1</button>
+               <button onclick="handleTecla2(`2`)" type="button" id="2-2" class="button">2</button>
+               <button onclick="handleTecla2(`3`)" type="button" id="3-2" class="button">3</button>
+               <button onclick="handleTecla2(`4`)" type="button" id="4-2" class="button">4</button>
+               <button onclick="handleTecla2(`5`)" type="button" id="5-2" class="button">5</button>
+               <button onclick="handleTecla2(`6`)" type="button" id="6-2" class="button">6</button>
+               <button onclick="handleTecla2(`7`)" type="button" id="7-2" class="button">7</button>
+               <button onclick="handleTecla2(`8`)" type="button" id="8-2" class="button">8</button>
+               <button onclick="handleTecla2(`9`)" type="button" id="9-2" class="button">9</button>
+
+               <button onclick="handleTecla2(`0`)" type="button" id="0-2" class="button">0</button>
+               <button onclick="handleTecla2(`.`)" type="button" id="punto2" class="button">.</button>
+               <button onclick="calculation2()" type="button" id="igual2" class=" button igual">=</button>
+            </div>
+         </div>
+      </div>
+      <script src="./app.js">
+      </script>
+   </body>
+
+</html>
