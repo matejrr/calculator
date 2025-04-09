@@ -105,4 +105,3 @@ function calculation2() {
 }
 
 console.log("using git");
-console.log('hello')
